@@ -29,7 +29,7 @@ class LinkedList
     if @head_element.nil? 
       @head_element = Node.new(value) 
     else        
-      return "List is empty" unless tail_element
+      return empty_list unless tail_element
       tail_element.next_node = Node.new(value)
     end
     value
@@ -131,5 +131,3 @@ class LinkedList
   end
 
 end
-
-
